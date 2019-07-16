@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ValeriyPetryna/db2JS/issues"
   },
-  "homepage": "https://github.com/ValeriyPetryna/db2JS#readme"
+  "homepage": "https://github.com/ValeriyPetryna/db2JS#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  }
 }
