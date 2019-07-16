@@ -68,7 +68,7 @@ task7(subset)
 
 function task10 (arr) {
     arr.sort((a, b) => (b.libraryID > a.libraryID) ? 1 : -1)
-    console.log('Task 10: Sort = ' +JSON.stringify(arr,null,3))
+    console.log('Task 10: Sort = ' + JSON.stringify(arr,null,3))
 }
 
 task10(library)
@@ -78,3 +78,21 @@ function task14 (obj) {
 }
 
 task14(students)
+
+function task16 (obj) {
+    let reversedObj ={}
+    for (let key in obj) {
+        newValue = obj[key]
+        reversedObj[newValue] = key
+    }
+    console.log('Task 16: List of key = value - value = key = '+ JSON.stringify(reversedObj,null,3))
+}
+
+task16(students)
+
+function task17 (obj, property){   
+    console.log('Task 17: Has own property: '+ obj.hasOwnProperty(property))
+    return obj.hasOwnProperty(property)
+}
+
+task17(students, '')
